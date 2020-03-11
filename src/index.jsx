@@ -16,7 +16,8 @@ class Main extends React.Component {
     render() {
         return(
             <div>
-                <App age={27}/>
+                <App initialAge={27}/>
+                <App initialAge={27}/>
             </div>
         )
     }
