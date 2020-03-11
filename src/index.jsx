@@ -17,7 +17,6 @@ class Main extends React.Component {
         return(
             <div>
                 <App initialAge={27}/>
-                <App initialAge={27}/>
             </div>
         )
     }
