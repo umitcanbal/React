@@ -15,12 +15,7 @@ export default class App extends React.Component {
         
         return(
             <div>
-                <p>App'ten geliyorum</p>
-                <ul>
-                    {this.props.arrayo.map( (item, index) => {
-                        return <li key={index}>{item}</li>
-                    })}
-                </ul>
+                <p>heyy</p>
             </div>
         )
     }

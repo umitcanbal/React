@@ -5,16 +5,18 @@ import './index.html';
 import './index.scss';
 
 import App from './Components/App.jsx';
-import App2 from './Components/App2.jsx';
+
 
 class Main extends React.Component {
+    constructor(props) {
+        super(props);
+
+    }
+
     render() {
-        let myArray = ["ali", "ümitcan", "tolga"];
         return(
             <div>
-                <App arrayo = {myArray}/>
-                <p>araya</p>
-                <App2/>
+                <App />
             </div>
         )
     }
