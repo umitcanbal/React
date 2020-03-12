@@ -14,10 +14,10 @@ export default class App extends React.Component {
         return(
             <div>
                 <p>heyy</p>
-                {this.props.fonksiyon()}
+                <button onClick={this.props.fonksiyon}>Selamlama Butonu</button>
             </div>
         );
     }
 }
 
-
+//ÇOK ÖNEMLİ!!! Bu durumda child komponentten parent komponenta ulaşmış oluyorum!!! Selamlama Butonu child komponentteki bi şey ama fonksiyonun çalıştığı yer parent!!!
