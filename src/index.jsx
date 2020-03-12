@@ -27,7 +27,10 @@ class Main extends React.Component {
     render() {
         return(
             <div>
-                <App fonksiyon={this.isimDegis}/>
+                <App 
+                fonksiyon={this.isimDegis}
+                initialName = {this.state.name}
+                />
                 <p>***{this.state.name}***</p>
             </div>
         )
