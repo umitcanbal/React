@@ -13,10 +13,14 @@ class Main extends React.Component {
 
     }
 
+    selamVer = () => {
+        alert("Merhabaa")
+    }
+
     render() {
         return(
             <div>
-                <App/>
+                <App fonksiyon={this.selamVer}/>
             </div>
         )
     }

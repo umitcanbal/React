@@ -14,6 +14,7 @@ export default class App extends React.Component {
         return(
             <div>
                 <p>heyy</p>
+                {this.props.fonksiyon()}
             </div>
         );
     }
