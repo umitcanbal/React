@@ -10,17 +10,25 @@ import App from './Components/App.jsx';
 class Main extends React.Component {
     constructor(props) {
         super(props);
+        this.state = {
+            name: "ali"
+        }
 
     }
 
-    selamVer = () => {
-        alert("Merhabaa")
+    isimDegis = (yenisi) => {
+        this.setState( 
+            {
+                name: yenisi
+            }
+        )
     }
 
     render() {
         return(
             <div>
-                <App fonksiyon={this.selamVer}/>
+                <App fonksiyon={this.isimDegis}/>
+                <p>***{this.state.name}***</p>
             </div>
         )
     }

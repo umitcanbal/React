@@ -7,14 +7,22 @@ import React from 'react';
 export default class App extends React.Component {
     constructor(props) {
         super(props);
+        this.state = {
+            newName: "ümitcan"
+        }
 
+    }
+
+    changeName = () => {
+        this.props.fonksiyon(this.state.newName)
     }
 
     render() {
         return(
             <div>
+                
                 <p>heyy</p>
-                <button onClick={this.props.fonksiyon}>Selamlama Butonu</button>
+                <button onClick={this.changeName}>İsim Değiştirme Butonu</button>
             </div>
         );
     }
